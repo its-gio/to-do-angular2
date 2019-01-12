@@ -38,6 +38,11 @@ export class ProjectComponent implements OnInit {
 
   selectProject(project) {
     this.selectedProject = project;
-    console.log('Selected Project', project);
+    // console.log('Selected Project', project);
   }
+
+  // How to capture event
+  // eventTest($event) {
+  //   console.log($event);
+  // }
 }
