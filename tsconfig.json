@@ -13,7 +13,9 @@
     "lib": ["es2017", "dom"],
     "baseUrl": ".",
     "paths": {
-      "@workshop/material": ["libs/material/src/index.ts"]
+      "@workshop/material": ["libs/material/src/index.ts"],
+      "@workshop/code-data": ["libs/code-data/src/index.ts"],
+      "@workshop/ui-login": ["libs/ui-login/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
