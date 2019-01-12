@@ -17,13 +17,13 @@
     "material": {
       "tags": []
     },
-    "code-data": {
-      "tags": []
-    },
     "ui-login": {
       "tags": []
     },
     "ui-toolbar": {
+      "tags": []
+    },
+    "core-data": {
       "tags": []
     }
   }
