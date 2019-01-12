@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular To Do App';
+
+  links = [
+    { path: '/', icon: 'home', title: 'Home' },
+    { path: '/customers', icon: 'face', title: 'Customers' },
+    { path: '/project', icon: 'work', title: 'Project' }
+  ];
 }
