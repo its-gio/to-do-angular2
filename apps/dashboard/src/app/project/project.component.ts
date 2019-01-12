@@ -41,6 +41,10 @@ export class ProjectComponent implements OnInit {
     // console.log('Selected Project', project);
   }
 
+  cancel() {
+    this.selectProject(null);
+  }
+
   // How to capture event
   // eventTest($event) {
   //   console.log($event);
