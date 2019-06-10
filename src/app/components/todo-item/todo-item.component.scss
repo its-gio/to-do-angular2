@@ -1,0 +1,15 @@
+.del {
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken(red, 10%);
+  }
+}
+
+.is-complete {
+  text-decoration: line-through;
+}
