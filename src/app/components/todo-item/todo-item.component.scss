@@ -1,8 +1,13 @@
+.todo-item {
+  padding: 5px 10px;
+}
+
 .del {
   border-radius: 50%;
   background-color: red;
   color: white;
   border: none;
+  padding: 1px 6px;
 
   &:hover {
     cursor: pointer;
