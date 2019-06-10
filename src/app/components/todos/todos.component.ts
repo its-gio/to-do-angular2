@@ -21,7 +21,7 @@ export class TodosComponent implements OnInit {
       {
         id: 2,
         title: "todo two",
-        complete: false
+        complete: true
       },
       {
         id: 3,
