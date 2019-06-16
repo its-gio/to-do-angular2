@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+
+import { TodoService } from "../../services/todo.service";
 import { Todo } from "../../models/Todo";
 
 @Component({
@@ -7,27 +9,14 @@ import { Todo } from "../../models/Todo";
   styleUrls: ["./todos.component.scss"]
 })
 export class TodosComponent implements OnInit {
+  // Creating global todos variable and setting the type of Todo array from modules folder
   todos: Todo[];
 
-  constructor() {}
+  // Assigning todoService to serive in services folder (todo.service) to use method below
+  constructor(private todoService: TodoService) {}
 
   ngOnInit() {
-    this.todos = [
-      {
-        id: 1,
-        title: "todo one",
-        complete: false
-      },
-      {
-        id: 2,
-        title: "todo two",
-        complete: true
-      },
-      {
-        id: 3,
-        title: "todo two",
-        complete: false
-      }
-    ];
+    // Assigning method return to todos (this global variable)
+    this.todos = this.todoService.getTodos();
   }
 }
