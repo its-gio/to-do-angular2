@@ -1,26 +1,29 @@
 .todo {
+  display: flex;
+  flex-direction: column;
+
   &__item {
     margin: 5px 10px;
   }
 
   &__text {
     margin: 5px;
+
+    &.is-complete {
+      text-decoration: line-through;
+    }
   }
-}
 
-.del {
-  border-radius: 50%;
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 1px 6px;
+  &__delBtn {
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 1px 6px;
 
-  &:hover {
-    cursor: pointer;
-    background-color: darken(red, 10%);
+    &:hover {
+      cursor: pointer;
+      background-color: darken(red, 10%);
+    }
   }
-}
-
-.is-complete {
-  text-decoration: line-through;
 }

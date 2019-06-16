@@ -16,7 +16,6 @@ export class TodoItemComponent implements OnInit {
   // Add complete class to item
   setClasses() {
     let classes = {
-      todo: true,
       "is-complete": this.todo.complete
     };
 

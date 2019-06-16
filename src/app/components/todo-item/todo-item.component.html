@@ -3,5 +3,5 @@
   <span [ngClass]="setClasses()" class="todo__text">
     {{ todo.title }} - Complete: {{ todo.complete }}
   </span>
-  <button class="del" (click)="onDelete(todo)">x</button>
+  <button class="todo__delBtn" (click)="onDelete(todo)">x</button>
 </p>
