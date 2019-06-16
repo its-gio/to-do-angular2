@@ -1,5 +1,5 @@
-<p class="todo-item">
-  <input type="checkbox" />
+<p class="todo-item" [ngClass]="setClasses()">
+  <input type="checkbox" (change)="onToggle(todo)" />
   {{ todo.title }} - Complete: {{ todo.complete }}
-  <button class="del">x</button>
+  <button class="del" (click)="onDelete(todo)">x</button>
 </p>
