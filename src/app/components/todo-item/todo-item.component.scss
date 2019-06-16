@@ -1,5 +1,11 @@
-.todo-item {
-  padding: 5px 10px;
+.todo {
+  &__item {
+    margin: 5px 10px;
+  }
+
+  &__text {
+    margin: 5px;
+  }
 }
 
 .del {
