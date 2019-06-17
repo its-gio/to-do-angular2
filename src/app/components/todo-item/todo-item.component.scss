@@ -1,9 +1,8 @@
-.todo {
-  display: flex;
-  flex-direction: column;
-
-  &__item {
+.todo-item {
+  &__container {
     margin: 5px 10px;
+    display: flex;
+    align-items: center;
   }
 
   &__text {

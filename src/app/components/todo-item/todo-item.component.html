@@ -1,7 +1,7 @@
-<p class="todo__item">
+<div class="todo-item__container">
   <input type="checkbox" (change)="onToggle(todo)" />
-  <span [ngClass]="setClasses()" class="todo__text">
-    {{ todo.title }} - Complete: {{ todo.complete }}
+  <span [ngClass]="setClasses()" class="todo-item__text">
+    {{ todo.title }} - Complete: {{ todo.completed }}
   </span>
-  <button class="todo__delBtn" (click)="onDelete(todo)">x</button>
-</p>
+  <button class="todo-item__delBtn" (click)="onDelete(todo)">x</button>
+</div>
