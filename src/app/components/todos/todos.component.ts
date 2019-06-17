@@ -16,7 +16,9 @@ export class TodosComponent implements OnInit {
   constructor(private todoService: TodoService) {}
 
   ngOnInit() {
-    // Assigning method return to todos (this global variable)
-    this.todos = this.todoService.getTodos();
+    // .subscribe == .then
+    this.todoService.getTodos().subscribe(todos => {
+      this.todos = todos;
+    });
   }
 }
