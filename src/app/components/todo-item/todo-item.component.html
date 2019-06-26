@@ -1,5 +1,5 @@
 <div class="todo-item__container">
-  <input type="checkbox" (change)="onToggle(todo)" />
+  <input type="checkbox" [checked]="todo.completed" (change)="onToggle(todo)" />
   <span [ngClass]="setClasses()" class="todo-item__text">
     {{ todo.title }} - Complete: {{ todo.completed }}
   </span>
